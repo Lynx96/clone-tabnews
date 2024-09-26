@@ -1,6 +1,7 @@
 import database from "infra/database.js"
 
 async function status(request, response) {
+  
   const updatedAt = new Date().toISOString();
 
   const psqlVersion = await database.Query('SHOW server_version;');
