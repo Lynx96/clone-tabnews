@@ -1,21 +1,18 @@
-const nextJest = require('next/jest');
+const nextJest = require("next/jest");
 const dotenv = require("dotenv");
 
 dotenv.config({
-  path: '.env.development'
-})
+  path: ".env.development",
+});
 
 const createJestConfig = nextJest({
   dir: ".",
 });
 const jestConfig = createJestConfig({
-  moduleDirectories: ['node_modules', "<rootDir>"],  
-  testTimeout: 60000,  
-  
+  moduleDirectories: ["node_modules", "<rootDir>"],
+  testTimeout: 60000,
 });
 
-
-console.log("O ambiente padrão do jest é: ", process.env.NODE_ENV)
+console.log("O ambiente padrão do jest é: ", process.env.NODE_ENV);
 
 module.exports = jestConfig;
-
