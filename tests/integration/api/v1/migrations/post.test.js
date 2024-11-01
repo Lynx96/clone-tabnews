@@ -28,8 +28,3 @@ test("POST to /api/v1/migrations should return 200", async () => {
   expect(Array.isArray(response2Body)).toBe(true);
   expect(response2Body.length).toBe(0);
 });
-
-/* test.only("Teste de SQL injection", async() => {
-  await fetch("http://localhost:3000/api/v1/status?databaseName='; SELECT pg_sleep(4); --");
-  
-}) */
