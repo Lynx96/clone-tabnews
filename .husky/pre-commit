@@ -1,1 +1,1 @@
-npx secretlint --maskSecrets "**/*" 
+npm run secretlint 
