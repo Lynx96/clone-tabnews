@@ -1,9 +1,8 @@
-import database from "infra/database.js";
 import orchestrator from "tests/orchestrator";
 
 beforeAll(async () => {
   await orchestrator.waitForAllServices();
-  await database.Query("drop schema public cascade; create schema public;");
+  await orchestrator.clearDatabase();
 });
 
 describe("GET to /api/v1/migrations", () => {
