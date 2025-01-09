@@ -42,7 +42,7 @@
     "commitizen": "4.3.1",
     "concurrently": "9.1.0",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "9.16.0",
+    "eslint": "^8.57.0",
     "eslint-config-next": "15.0.4",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-jest": "28.9.0",
