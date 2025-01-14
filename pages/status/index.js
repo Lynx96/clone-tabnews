@@ -58,22 +58,22 @@ function DatabaseInfo() {
         <p>Used Connections: {data.dependencies.database.used_connections}</p>
       </>
     );
-
-    return (
-      <>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            height: "20rem",
-            marginTop: "2rem",
-            width: "auto",
-          }}
-        >
-          {databaseStatusInfo}
-        </div>
-      </>
-    );
   }
+
+  return (
+    <>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          height: "20rem",
+          marginTop: "2rem",
+          width: "auto",
+        }}
+      >
+        {databaseStatusInfo}
+      </div>
+    </>
+  );
 }
