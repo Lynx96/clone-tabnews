@@ -4,7 +4,7 @@
   "description": "Repositório inicial para implementação do tabnews (curso.dev)",
   "main": "index.js",
   "scripts": {
-    "dev": "trap 'exit 0' INT; npm run services:up && npm run services:wait:database && npm run migrations:up && next dev",
+    "dev": "trap 'exit 0' INT; npm run lint:prettier:fix && npm run services:up && npm run services:wait:database && npm run migrations:up && next dev",
     "postdev": "npm run services:stop",
     "test": "trap 'exit 0' INT; npm run services:up && concurrently -n next,jest --hide next -k -s command-jest \"next dev\" \"jest --runInBand --verbose\"",
     "test:watch": "jest --watchAll --runInBand --verbose",
